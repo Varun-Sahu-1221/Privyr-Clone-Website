@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privyr</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="Images/favicon.ico" type="image/x-icon">
+
+</head>
+<body class="bg-gray-100">
+    <div id="nav-container" class="sticky top-0 z-50 w-full">
+        <nav id="main-nav" class="bg-white/80 backdrop-blur-lg mt-2 mx-4 rounded-2xl shadow-xl">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex items-center justify-between h-16">
+                    <div class="flex-shrink-0 flex items-center">
+                        <img id="logo" onclick="window.location.href='index.html'" src="Images/privyr-logo.webp" alt="Privyr Logo" class="h-8">
+                        <div class="ml-3 w-[7.5ch]">
+                            <span id="company-name" class="text-xl font-bold text-gradient">Privyr</span>
+                        </div>
+                    </div>
+                    <div class="hidden md:flex md:items-center md:space-x-8">
+                        <a href="index.html" class="text-gray-600 hover:text-indigo-600 font-medium transition-colors duration-200">Home</a>
+                        <a href="pricing.html" class="text-gray-600 hover:text-indigo-600 font-medium transition-colors duration-200">Pricing</a>
+                    </div>
+                    <div class="hidden md:flex items-center space-x-2">
+                        <a href="login.html" class="text-gray-600 hover:text-gray-800 px-4 py-2 rounded-md text-sm font-medium transition-colors duration-200">Sign In</a>
+                        <a href="login.html" class="bg-indigo-600 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-indigo-700 transition-colors duration-200 shadow-sm">Log In</a>
+                    </div>
+                    <div class="md:hidden flex items-center">
+                        <button id="mobile-menu-button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-500 hover:text-gray-700 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500" aria-controls="mobile-menu" aria-expanded="false">
+                            <span class="sr-only">Open main menu</span>
+                            <svg id="hamburger-icon" class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" /></svg>
+                            <svg id="close-icon" class="h-6 w-6 hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div id="mobile-menu" class="md:hidden hidden">
+                <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                    <a href="index.html" class="text-gray-600 hover:bg-gray-100 hover:text-indigo-600 block px-3 py-2 rounded-md text-base font-medium">Home</a>
+                    <a href="pricing.html" class="text-gray-600 hover:bg-gray-100 hover:text-indigo-600 block px-3 py-2 rounded-md text-base font-medium">Pricing</a>
+                </div>
+                <div class="pt-4 pb-3 border-t border-gray-200">
+                    <div class="flex items-center px-5">
+                        <a href="login.html" class="bg-indigo-600 text-white block w-full text-center px-4 py-2 rounded-md text-base font-medium hover:bg-indigo-700">Log In</a>
+                        <a href="login.html" class="ml-3 text-gray-600 hover:text-gray-800 block w-full text-center px-4 py-2 rounded-md text-base font-medium border border-gray-300">Sign In</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <section>
+        <div class="HomePage-Part1">
+            <div class="HP-P1-Heading1">
+                <div><span id="HP-Heading1-text-black">Convert more leads into clients,</span><span id="HP-Heading1-blue-text">from your phone.</span></div>
+            </div>
+            <div class="HP-P1-Para"><p>The easiest way to capture, engage, and manage leads on WhatsApp, text message, phone calls, and more</p></div>
+            <div class="HP-P1-Rating-Download"><img src="Images/Rating+&+Download.png"/></div>
+            <div class="HP-P1-Try-Privyr-btn"><button onclick="window.location.href='login.html'">Try Privyr FREE</button></div>
+            <div class="HP-P1-Hero-Video"><video autoplay loop muted ><source src="Videos/Hero+Video-01.mp4" type="video/mp4"></div>
+        </div>
+    </section>
+    <section>
+        <div class="HomePage-Part2">
+            <div class="main-container">
+                <h1 class="header-title">Made for solopreneurs, marketers, & businesses of all sizes</h1>
+                <div class="content-grid">            
+                    <div class="left-column">
+                        <div class="accordion-item active" data-target="solopreneurs">
+                            <div class="accordion-header">For Solopreneurs</div>
+                            <div class="feature-card">
+                                <div class="feature-list">
+                                    <div class="feature-item"><div class="icon"><img src="Images/Instant+Lead+Alerts (1).png"/></div><p>Instant Lead Alerts</p></div>
+                                    <div class="feature-item"><div class="icon"><img src="Images/One-Tap+Personalised+Scripts.png"/></div><p>One-Tap Personalised Scripts</p></div>
+                                    <div class="feature-item"><div class="icon"><img src="Images/Media-Rich+Content+Builder.png"/></div><p>Media-Rich Content Builder</p></div>
+                                    <div class="feature-item"><div class="icon"><img src="Images/View+&+Interest+Tracking.png"/></div><p>View & Interest Tracking</p></div>
+                                    <div class="feature-item"><div class="icon"><img src="Images/No-code+Lead+Integration.png"/></div><p>No-code Lead Integration</p></div>
+                                    <div class="feature-item"><div class="icon"><img src="Images/Offline+Lead+Capture.png"/></div><p>Offline Lead Capture</p></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item" data-target="sales">
+                            <div class="accordion-header">For Sales Teams</div>
+                                <div class="feature-card">
+                                    <div class="feature-list">
+                                        <div class="feature-item"><div class="icon"><img src="Images/Team+Dashboard+&+Analytics.png"/></div><p>Team Dashboard & Analytics</p></div>
+                                        <div class="feature-item"><div class="icon"><img src="Images/Automatic+Lead+Distribution.png"/></div><p>Automatic Lead Assignment</p></div>
+                                        <div class="feature-item"><div class="icon"><img src="Images/Round+Robin+Distribution.png"/></div><p>Round Robin Distribution</p></div>
+                                        <div class="feature-item"><div class="icon"><img src="Images/WhatsApp+Lead+Alerts.png"/></div><p>WhatsApp Lead Alerts</p></div>
+                                    </div>
+                                    <a href="#" class="find-out-more">Find out more &rarr;</a>
+                                </div>
+                            </div>                
+                            <div class="accordion-item" data-target="agencies">
+                                <div class="accordion-header">For Marketing Agencies</div>
+                                <div class="feature-card">
+                                    <div class="feature-list">
+                                        <div class="feature-item"><div class="icon"><img src="Images/Dashboard+for+Client+Management.png"/></div><p>Dashboard for Client Management</p></div>
+                                        <div class="feature-item"><div class="icon"><img src="Images/Client+Activity+Analytics.png"/></div><p>Client Activity Analytics</p></div>
+                                        <div class="feature-item"><div class="icon"><img src="Images/Automatic+Lead+Distribution.png"/></div><p>Automatic Lead Distribution via WhatsApp</p></div>
+                                        <div class="feature-item"><div class="icon"><img src="Images/Real-time+Lead+Status.png"/></div><p>Real-time Lead Status</p></div>
+                                    </div>
+                                    <a href="#" class="find-out-more">Find out more &rarr;</a>
+                                </div>
+                            </div>
+                        </div>           
+                        <div class="right-column">
+                            <img src="Images/For+Marketing+Agencies 1.png" alt="Features for Solopreneurs" class="background-image active" data-image="solopreneurs">
+                            <img src="Images/For+Marketing+Agencies 2.png" alt="Features for Sales Teams" class="background-image" data-image="sales">
+                            <img src="Images/For+Marketing+Agencies 3.png" alt="Features for Marketing Agencies" class="background-image" data-image="agencies">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="HomePage-Part3">
+            <div class="HP-P3-Heading1"><span id="HP-Heading1-text-black">Trusted by </span><span id="HP-Heading1-blue-text">500,000+</span><span id="HP-Heading1-text-black">businesses across 125 countries</span></div>
+            <div class="logo-scroller">
+                <div class="scroller-track">
+                    <!-- Original Set of Logos -->
+                    <div class="logo"><img src="Images/Volkswagen-Logo (1).png" alt="Volkswagen"></div>
+                    <div class="logo"><img src="Images/AIA-Logo.jpg" alt="AIA"></div>
+                    <div class="logo"><img src="Images/balmytrip-logo.jpg" alt="Balmy Trip"></div>
+                    <div class="logo"><img src="Images/just-co-logo.jfif" alt="just co"></div>
+                    <div class="logo"><img src="Images/remax-logo.png" alt="Remax"></div>
+                    <div class="logo"><img src="Images/whisky-cask-club.avif" alt="whisky cask club"></div>
+                    <div class="logo"><img src="Images/Keller-Williams-Realty-Logo.png" alt="Keller Williams"></div>
+                    <div class="logo"><img src="Images/manchester-logo.webp" alt="Manchester"></div>
+                    <!-- Duplicated Set for Seamless Loop -->
+                    <div class="logo"><img src="Images/Volkswagen-Logo (1).png" alt="Volkswagen"></div>
+                    <div class="logo"><img src="Images/AIA-Logo.jpg" alt="AIA"></div>
+                    <div class="logo"><img src="Images/balmytrip-logo.jpg" alt="Balmy Trip"></div>
+                    <div class="logo"><img src="Images/just-co-logo.jfif" alt="just co"></div>
+                    <div class="logo"><img src="Images/remax-logo.png" alt="Remax"></div>
+                    <div class="logo"><img src="Images/whisky-cask-club.avif" alt="whisky cask club"></div>
+                    <div class="logo"><img src="Images/Keller-Williams-Realty-Logo.png" alt="Keller Williams"></div>
+                    <div class="logo"><img src="Images/manchester-logo.webp" alt="Manchester"></div>
+                </div>
+            </div>
+            <div class="stats-container">
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <i class="fa-solid fa-user-tie"></i>
+                    </div>
+                    <div class="stat-number">
+                        &gt;100 
+                    </div>
+                    <p class="stat-label">Engaged by Privyr users</p>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <i class="fa-solid fa-clock"></i>                
+                    </div>
+                <div class="stat-number">80%</div>
+                <p class="stat-label">Time saved on sales tasks</p>
+            </div>
+            <div class="stat-item">
+                <div class="stat-icon">
+                    <i class="fa-solid fa-chart-line"></i>
+                </div>
+                <div class="stat-number">+300%</div>
+                <p class="stat-label">Increase in sales</p>
+            </div>
+        </div>    
+    </section>
+    <section>
+        <div class="HomePage-Part4">
+            <div class="HP-P4-Heading1"><h2>Simplify your sales process with one app that works with all the tools you're already using</h2></div>
+            <div class="HP-P4-Content"><img src="Images/Simplify+Sale+process.png"/></div>
+        </div>
+    </section>
+    <section>
+        <div class="HomePage-Part5">            
+<section class="testimonial-section">
+    <h2>Hear from our customers</h2>
+    <p class="subtitle">On average, Privyr users see a 300% improvement in sales and productivity.</p>
+    <div class="slider-wrapper">
+        <div class="slider-container">
+            <div class="slider-track">
+                <!-- Card 1 -->
+                <div class="testimonial-card">
+                    <div class="card-header">
+                        <img src="https://placehold.co/100x100/EBF0FF/4A43C1?text=JS" alt="Jose Sanchez">
+                        <div class="author-info">
+                            <div class="name">Jose Sanchez</div>
+                            <div class="title">President, The Insurance Advisor</div>
+                        </div>
+                    </div>
+                    <div class="card-main">
+                        <div>
+                            <div class="stat">1st</div>
+                            <div class="stat-label">Choice of assistance</div>
+                        </div>
+                        <img src="https://placehold.co/200x80/ffffff/cccccc?text=InsureCo" alt="Company Logo" class="company-logo">
+                    </div>
+                    <div class="card-body">
+                        <blockquote>"<strong>Privyr is a go-to assistant to stay on top of your leads.</strong> We were running Facebook Ads but didn't have a way to quickly get notified and respond to them. Privyr has allowed us to quickly respond to new leads via direct phone calls, text, and email."</blockquote>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="testimonial-card">
+                    <div class="card-header">
+                        <img src="https://placehold.co/100x100/EBF0FF/4A43C1?text=BC" alt="Benny Chang">
+                        <div class="author-info">
+                            <div class="name">Benny Chang</div>
+                            <div class="title">Director & Optometrist, Your Eye Guardian</div>
+                        </div>
+                    </div>
+                    <div class="card-main">
+                        <div>
+                            <div class="stat">30%</div>
+                            <div class="stat-label">More conversions</div>
+                        </div>
+                        <img src="https://placehold.co/200x80/ffffff/cccccc?text=Eye+Guardian" alt="Company Logo" class="company-logo">
+                    </div>
+                    <div class="card-body">
+                        <blockquote>"<strong>Privyr links to Facebook Lead Forms with such amazing ease.</strong> We always faced inaccurate syncing issues with Zapier, while downloading leads from Facebook directly is so tedious."</blockquote>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="testimonial-card">
+                    <div class="card-header">
+                        <img src="https://placehold.co/100x100/EBF0FF/4A43C1?text=IV" alt="Irmelind van Zyl">
+                        <div class="author-info">
+                            <div class="name">Irmelind van Zyl</div>
+                            <div class="title">Wellness Advocate & Beauty Therapist, BerOUTiful Oils</div>
+                        </div>
+                    </div>
+                    <div class="card-main">
+                        <div>
+                            <div class="stat">6 hrs</div>
+                            <div class="stat-label">Saved per day</div>
+                        </div>
+                        <img src="https://placehold.co/200x80/ffffff/cccccc?text=BerOUTiful" alt="Company Logo" class="company-logo">
+                    </div>
+                    <div class="card-body">
+                        <blockquote>"Privyr has helped me save 5-6 hours per day, as it tracks my activities and helps me send out standardised yet personal messages. <strong>It is a time-saving, life-saving app.</strong> Plus, the organisational options with groups and content you can pre-load is amazing."</blockquote>
+                    </div>
+                </div>
+                <!-- Card 4 -->
+                <div class="testimonial-card">
+                    <div class="card-header">
+                        <img src="https://placehold.co/100x100/EBF0FF/4A43C1?text=SL" alt="Sarah Lee">
+                        <div class="author-info">
+                            <div class="name">Sarah Lee</div>
+                            <div class="title">Marketing Manager, TechForward</div>
+                        </div>
+                    </div>
+                    <div class="card-main">
+                        <div>
+                            <div class="stat">50%</div>
+                            <div class="stat-label">Increase in engagement</div>
+                        </div>
+                        <img src="https://placehold.co/200x80/ffffff/cccccc?text=TechForward" alt="Company Logo" class="company-logo">
+                    </div>
+                    <div class="card-body">
+                        <blockquote>"The ability to organize leads and automate follow-ups has been a game-changer for our marketing campaigns. <strong>Our engagement rates have never been higher.</strong>"</blockquote>
+                    </div>
+                </div>
+                <!-- Card 5 -->
+                <div class="testimonial-card">
+                    <div class="card-header">
+                        <img src="https://placehold.co/100x100/EBF0FF/4A43C1?text=MC" alt="Mike Chen">
+                        <div class="author-info">
+                            <div class="name">Mike Chen</div>
+                            <div class="title">Founder & CEO, Innovate Startups</div>
+                        </div>
+                    </div>
+                    <div class="card-main">
+                        <div>
+                            <div class="stat">2x</div>
+                            <div class="stat-label">Return on investment</div>
+                        </div>
+                        <img src="https://placehold.co/200x80/ffffff/cccccc?text=Innovate" alt="Company Logo" class="company-logo">
+                    </div>
+                    <div class="card-body">
+                        <blockquote>"As a startup, every lead is critical. Privyr ensures we never miss an opportunity. <strong>The seamless integration and mobile-first design are perfect for a team on the move.</strong>"</blockquote>
+                    </div>
+                </div>
+                <!-- Card 6 -->
+                <div class="testimonial-card">
+                    <div class="card-header">
+                        <img src="https://placehold.co/100x100/EBF0FF/4A43C1?text=EW" alt="Emily White">
+                        <div class="author-info">
+                            <div class="name">Emily White</div>
+                            <div class="title">Sales Director, Global Properties</div>
+                        </div>
+                    </div>
+                    <div class="card-main">
+                        <div>
+                            <div class="stat">150+</div>
+                            <div class="stat-label">Deals closed quarterly</div>
+                        </div>
+                        <img src="https://placehold.co/200x80/ffffff/cccccc?text=GlobalProp" alt="Company Logo" class="company-logo">
+                    </div>
+                    <div class="card-body">
+                        <blockquote>"Our sales team is distributed globally. Privyr provides the perfect platform to keep everyone synced and focused on closing deals. <strong>The analytics help us track performance effectively.</strong>"</blockquote>
+                    </div>
+                </div>
+                <!-- Card 7 -->
+                <div class="testimonial-card">
+                    <div class="card-header">
+                        <img src="https://placehold.co/100x100/EBF0FF/4A43C1?text=DG" alt="David Green">
+                        <div class="author-info">
+                            <div class="name">David Green</div>
+                            <div class="title">Product Lead, Creative Solutions</div>
+                        </div>
+                    </div>
+                    <div class="card-main">
+                        <div>
+                            <div class="stat">95%</div>
+                            <div class="stat-label">User satisfaction</div>
+                        </div>
+                        <img src="https://placehold.co/200x80/ffffff/cccccc?text=Creative" alt="Company Logo" class="company-logo">
+                    </div>
+                    <div class="card-body">
+                        <blockquote>"We recommend Privyr to all our clients who need a robust lead management solution. <strong>It's simple to set up, incredibly powerful, and the customer support is top-notch.</strong>"</blockquote>
+                    </div>
+                </div>
+                <!-- Card 8 -->
+                <div class="testimonial-card">
+                    <div class="card-header">
+                        <img src="https://placehold.co/100x100/EBF0FF/4A43C1?text=LB" alt="Laura Black">
+                        <div class="author-info">
+                            <div class="name">Laura Black</div>
+                            <div class="title">Customer Success, HealthFirst Clinic</div>
+                        </div>
+                    </div>
+                    <div class="card-main">
+                        <div>
+                            <div class="stat">&lt;1hr</div>
+                            <div class="stat-label">Avg. response time</div>
+                        </div>
+                        <img src="https://placehold.co/200x80/ffffff/cccccc?text=HealthFirst" alt="Company Logo" class="company-logo">
+                    </div>
+                    <div class="card-body">
+                        <blockquote>"Responding to patient inquiries quickly is crucial for us. Privyr's instant notifications and templates allow us to provide timely and personalized information. <strong>It has transformed our patient communication.</strong>"</blockquote>
+                    </div>
+                </div>
+            </div>
+        </div>        
+        <div class="slider-nav">
+            <button class="slider-btn" id="prevBtn">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" /></svg>
+            </button>
+            <button class="slider-btn" id="nextBtn">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" /></svg>
+            </button>
+        </div>
+    </div>
+        </div>
+    </section>
+     <section class="hero-section">
+        <div class="hero-badge">
+            The only mobile CRM you ever need
+        </div>
+        <h1 class="hero-title">
+            Spend more quality time engaging your leads <span class="emoji">🚀</span>
+        </h1>
+        <button class="cta-button" onclick="window.location.href='login.html'">
+            Start Free Trial
+        </button>
+    </section>
+     <footer class="site-footer">
+        <p>&copy; Privyr 2025. All rights reserved.</p>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const hamburgerIcon = document.getElementById('hamburger-icon');
+            const closeIcon = document.getElementById('close-icon');
+
+            // Function to toggle the mobile menu
+            const toggleMobileMenu = () => {
+                mobileMenu.classList.toggle('hidden');
+                hamburgerIcon.classList.toggle('hidden');
+                closeIcon.classList.toggle('hidden');
+                const isExpanded = mobileMenuButton.getAttribute('aria-expanded') === 'true';
+                mobileMenuButton.setAttribute('aria-expanded', !isExpanded);
+            };
+
+            // Add event listener for the mobile menu button
+            mobileMenuButton.addEventListener('click', toggleMobileMenu);
+        });
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const accordionItems = document.querySelectorAll('.accordion-item');
+            const images = document.querySelectorAll('.background-image');
+
+            accordionItems.forEach(item => {
+                const header = item.querySelector('.accordion-header');
+                header.addEventListener('click', () => {
+                    const targetId = item.dataset.target;
+                    const isActive = item.classList.contains('active');
+
+                    // Close all items
+                    accordionItems.forEach(i => i.classList.remove('active'));
+                    images.forEach(img => img.classList.remove('active'));
+
+                    // If the clicked item was not already active, open it
+                    if (!isActive) {
+                        item.classList.add('active');
+                        const targetImage = document.querySelector(`.background-image[data-image="${targetId}"]`);
+                        if (targetImage) {
+                            targetImage.classList.add('active');
+                        }
+                    }
+                });
+            });
+        });
+        document.addEventListener('DOMContentLoaded', function() {
+        const track = document.querySelector('.slider-track');
+        const cards = Array.from(track.children);
+        const nextButton = document.getElementById('nextBtn');
+        const prevButton = document.getElementById('prevBtn');
+
+        if (cards.length === 0) return;
+
+        let cardWidth = 0;
+        let currentIndex = 0;
+        let slidesToShow = 1;
+        const totalSlides = cards.length;
+
+        function calculateCardWidth() {
+             // Calculate width based on the container and margins
+            const containerWidth = track.parentElement.offsetWidth;
+            slidesToShow = getSlidesToShow();
+            const margin = parseInt(getComputedStyle(cards[0]).marginLeft) + parseInt(getComputedStyle(cards[0]).marginRight);
+            cardWidth = (containerWidth / slidesToShow) - margin + (margin / slidesToShow);
+        }
+
+        const getSlidesToShow = () => {
+            if (window.innerWidth >= 1024) return 3;
+            if (window.innerWidth >= 768) return 2;
+            return 1;
+        };
+        
+        function setupSlider() {
+            slidesToShow = getSlidesToShow();
+            calculateCardWidth();
+            
+            const maxIndex = Math.max(0, totalSlides - slidesToShow);
+            if (currentIndex > maxIndex) {
+                currentIndex = maxIndex;
+            }
+            moveToSlide(currentIndex);
+        }
+
+        const moveToSlide = (targetIndex) => {
+            const maxIndex = Math.max(0, totalSlides - slidesToShow);
+            if (targetIndex < 0) targetIndex = 0;
+            if (targetIndex > maxIndex) targetIndex = maxIndex;
+
+            const amountToMove = targetIndex * cardWidth;
+            track.style.transform = 'translateX(-' + amountToMove + 'px)';
+            currentIndex = targetIndex;
+            updateNav();
+        };
+
+        const updateNav = () => {
+            prevButton.disabled = currentIndex === 0;
+            nextButton.disabled = currentIndex >= totalSlides - slidesToShow;
+        };
+
+        nextButton.addEventListener('click', () => {
+            moveToSlide(currentIndex + 1);
+        });
+
+        prevButton.addEventListener('click', () => {
+            moveToSlide(currentIndex - 1);
+        });
+        
+        window.addEventListener('resize', setupSlider);
+        
+        // Initial setup
+        setupSlider();
+    });
+    </script>
+
+</body>
+</html>

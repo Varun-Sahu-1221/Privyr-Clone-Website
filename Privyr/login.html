@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create an Account | Privyr</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="login.css">
+    <link rel="icon" href="Images/favicon.ico" type="image/x-icon">
+    
+</head>
+<body class="bg-gray-50">
+    <div class="min-h-screen flex flex-col lg:flex-row">
+        <!-- Left Column: Branding and Information -->
+        <div class="lg:w-1/2 w-full bg-custom-gradient flex flex-col justify-center items-center p-8 lg:p-12 text-gray-800 order-2 lg:order-1">
+            <div class="max-w-md w-full space-y-8">
+                <!-- Logo -->
+                <div class="flex items-center space-x-2">
+                    <img id="logo" onclick="window.location.href='index.html'" src="Images/privyr-logo.webp" height="50px" width="50px"/>
+                    <span id="logo" onclick="window.location.href='index.html'" class="text-2xl font-bold">Privyr</span>
+                </div>
+                <!-- Main Heading -->
+                <div>
+                    <h1 class="text-3xl md:text-4xl font-bold leading-tight">
+                        Trusted by <span class="text-blue-600">500,000+</span> businesses across 125 countries
+                    </h1>
+                </div>
+                <!-- Star Rating -->
+                <div class="inline-block p-1 bg-white rounded-lg shadow-sm">
+                    <div class="flex items-center space-x-4 p-3">
+                        <span class="text-lg font-medium">Rated 4.9 Stars</span>
+                        <div class="flex items-center">
+                            <div class="flex text-yellow-400">
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                <svg class="w-6 h-6 text-gray-300" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                            </div>                            
+                        </div>
+                    </div>
+                </div>
+                <!-- Subheading and Feature List -->
+                <div class="space-y-6 pt-4">
+                    <p class="text-xl font-semibold">Claim your free account today.<br>No credit card required.</p>
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-center space-x-3">
+                            <svg class="w-6 h-6 text-green-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            <span>Get started in 30 seconds</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <svg class="w-6 h-6 text-green-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            <span>Unlock Pro features for 14 days</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <svg class="w-6 h-6 text-green-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            <span>Free forever for core features</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Right Column: Sign-up Form -->
+        <div class="lg:w-1/2 w-full bg-white flex justify-center items-center p-8 lg:p-12 order-1 lg:order-2">
+            <div class="max-w-sm w-full">
+                <div class="text-left space-y-6">
+                    <h2 class="text-2xl font-bold text-gray-900">Create an Account</h2>
+                    <!-- Google Sign-up Button -->
+                    <button class="w-full inline-flex items-center justify-center py-3 px-4 border border-gray-300 rounded-md shadow-sm bg-white text-sm font-medium text-gray-700 hover:bg-gray-50">
+                        <img src="Images/google-logo.webp" height="25px" width="25px"/>
+                        Sign up with Google
+                    </button>
+                    <!-- OR Separator -->
+                    <div class="flex items-center">
+                        <div class="flex-grow bg-gray-200 h-px"></div>
+                        <span class="flex-shrink text-xs text-gray-500 uppercase px-4">OR</span>
+                        <div class="flex-grow bg-gray-200 h-px"></div>
+                    </div>
+                    <!-- Sign-up Form -->
+                    <form class="space-y-5" action="#" method="POST" onsubmit="return false;">
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700">Email*</label>
+                            <div class="mt-1">
+                                <input id="email" name="email" type="email" autocomplete="email" required
+                                    class="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                                    placeholder="e.g. email@example.com">
+                            </div>
+                        </div>
+                        <div>
+                            <button type="submit"
+                                class="w-full flex justify-center py-3 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+                                GET STARTED
+                            </button>
+                        </div>
+                    </form>
+                    <!-- Login Link and Terms -->
+                    <div class="text-center text-sm text-gray-600">
+                        <p>
+                            Already have an account?
+                            <a href="#" class="font-medium text-blue-600 hover:text-blue-500">Log in</a>
+                        </p>
+                        <p class="mt-4 text-xs text-gray-500">
+                            By clicking sign up, you are agreeing to accept our <a href="#" class="underline">Terms of Use</a> and <a href="#" class="underline">Privacy Policy</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>   
+</body>
+</html>

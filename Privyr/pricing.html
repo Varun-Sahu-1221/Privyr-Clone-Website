@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="pricing.css">
+    <link rel="icon" href="Images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+<body class="bg-gray-50">
+    <div id="nav-container" class="sticky top-0 z-50 w-full">
+        <nav id="main-nav" class="bg-white/80 backdrop-blur-lg mt-2 mx-4 rounded-2xl shadow-xl">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex items-center justify-between h-16">
+                    <div class="flex-shrink-0 flex items-center">
+                        <img id="logo" onclick="window.location.href='index.html'" src="Images/privyr-logo.webp" alt="Privyr Logo" class="h-8">
+                        <div class="ml-3 w-[7.5ch]">
+                            <span id="company-name" class="text-xl font-bold text-gradient">Privyr</span>
+                        </div>
+                    </div>
+                    <div class="hidden md:flex md:items-center md:space-x-8">
+                        <a href="index.html" class="text-gray-600 hover:text-indigo-600 font-medium transition-colors duration-200">Home</a>
+                        <a href="pricing.html" class="text-gray-600 hover:text-indigo-600 font-medium transition-colors duration-200">Pricing</a>
+                    </div>
+                    <div class="hidden md:flex items-center space-x-2">
+                        <a href="login.html" class="text-gray-600 hover:text-gray-800 px-4 py-2 rounded-md text-sm font-medium transition-colors duration-200">Sign In</a>
+                        <a href="login.html" class="bg-indigo-600 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-indigo-700 transition-colors duration-200 shadow-sm">Log In</a>
+                    </div>
+                    <div class="md:hidden flex items-center">
+                        <button id="mobile-menu-button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-500 hover:text-gray-700 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500" aria-controls="mobile-menu" aria-expanded="false">
+                            <span class="sr-only">Open main menu</span>
+                            <svg id="hamburger-icon" class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" /></svg>
+                            <svg id="close-icon" class="h-6 w-6 hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+            <div id="mobile-menu" class="md:hidden hidden">
+                <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                    <a href="index.html" class="text-gray-600 hover:bg-gray-100 hover:text-indigo-600 block px-3 py-2 rounded-md text-base font-medium">Home</a>
+                    <a href="pricing.html" class="text-gray-600 hover:bg-gray-100 hover:text-indigo-600 block px-3 py-2 rounded-md text-base font-medium">Pricing</a>
+                </div>
+                <div class="pt-4 pb-3 border-t border-gray-200">
+                    <div class="flex items-center px-5">
+                        <a href="login.html" class="bg-indigo-600 text-white block w-full text-center px-4 py-2 rounded-md text-base font-medium hover:bg-indigo-700">Log In</a>
+                        <a href="login.html" class="ml-3 text-gray-600 hover:text-gray-800 block w-full text-center px-4 py-2 rounded-md text-base font-medium border border-gray-300">Sign In</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    <div class="container mx-auto px-4 py-12 sm:py-16">
+        <div class="text-center max-w-4xl mx-auto">
+            <h1 class="text-4xl md:text-5xl font-bold text-gray-800">Flexible plans for teams of all sizes</h1>
+            <p class="mt-4 text-lg text-gray-600">Skyrocket your sales and productivity today 🚀</p>
+            <p class="mt-2 text-lg text-gray-600">Capture, engage, and manage every lead from your phone with Privyr.</p>
+        </div>
+
+        <div class="flex justify-center items-center mt-10 space-x-4">
+            <span class="font-medium text-gray-700">Monthly</span>
+            <div class="relative inline-block w-40 h-8">
+                <div class="relative w-full h-full bg-white border-2 border-blue-600 rounded-full">
+                     <label for="pricing-toggle" class="absolute top-0 left-0 w-1/2 h-full bg-blue-600 rounded-full cursor-pointer transition-all duration-300 ease-in-out" id="toggle-bg"></label>
+                    <button id="monthly-btn" class="absolute top-0 left-0 w-1/2 h-full text-white font-semibold rounded-full focus:outline-none">Monthly</button>
+                    <button id="yearly-btn" class="absolute top-0 right-0 w-1/2 h-full text-blue-600 font-semibold rounded-full focus:outline-none">Yearly</button>
+                </div>
+            </div>
+            <span class="hidden sm:inline-block bg-green-100 text-green-800 text-xs font-semibold ml-2 px-2.5 py-0.5 rounded-full">6.5 months free! in Yearly</span>
+        </div>
+        <p class="text-center text-gray-500 mt-4">Save $144 USD by upgrading to the annual plan.</p>
+
+        <div class="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto items-stretch">
+            <!-- Free Forever Plan -->
+            <div id="plan-free-forever" class="bg-white rounded-lg shadow-lg p-8 flex flex-col transition-all duration-300">
+                <div class="flex-grow">
+                    <h3 class="text-sm font-bold text-blue-500 bg-blue-100 inline-block px-3 py-1 rounded-full">Free Forever</h3>
+                    <p class="mt-4 text-4xl font-bold text-gray-900">$0 USD</p>
+                    <p class="text-gray-500 mt-2">No payment or credit card needed</p>
+                    <div class="mt-6 bg-gray-100 text-center py-3 rounded-lg">
+                        <p class="font-semibold text-gray-800">Up to 3 team members</p>
+                    </div>
+                    <p class="text-gray-600 mt-4">Basic access with limitations on the number of leads you can engage.</p>
+                </div>
+                <div class="mt-auto">
+                    <div class="mt-8">
+                        <button class="w-full bg-white border border-blue-600 text-blue-600 font-semibold py-3 rounded-lg hover:bg-blue-50 transition-colors">Get Started</button>
+                        <p class="text-center text-xs text-gray-500 mt-3">Free forever. No credit card required.</p>
+                    </div>
+                    <div class="mt-8 pt-8 border-t">
+                        <h4 class="font-semibold text-gray-800">Key Features:</h4>
+                        <ul class="mt-4 space-y-3 text-gray-600">
+                            <li class="flex items-start"><span class="font-bold mr-2 text-black">•</span>Unlimited Lead Source Integrations</li>
+                            <li class="flex items-start"><span class="font-bold mr-2 text-black">•</span>Instant Instant Lead Alerts (app only)</li>
+                            <li class="flex items-start"><span class="font-bold mr-2 text-black">•</span> Up to 2 Lead Distribution Recipients</li>
+                            <li class="flex items-start"><span class="font-bold mr-2 text-black">•</span> Up to 10 Message, File, and Page Templates</li>
+                            <li class="flex items-start"><span class="font-bold mr-2 text-black">•</span> Engage and track activities of your 10 most recent leads</li>
+                            <li class="flex items-start"><span class="font-bold mr-2 text-black">•</span> Access across mobile app & web version</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Privyr Pro Plan -->
+            <div id="plan-privyr-pro" class="bg-white rounded-lg shadow-lg p-8 flex flex-col border-2 border-blue-600 relative transition-all duration-300">
+                 <div class="absolute top-0 right-8 -mt-4 bg-blue-600 text-white text-sm font-semibold px-4 py-1 rounded-full">Most Popular</div>
+                <div class="flex-grow">
+                    <h3 class="text-sm font-bold text-blue-600 bg-blue-100 inline-block px-3 py-1 rounded-full">Privyr Pro</h3>
+                    <p class="mt-4 text-4xl font-bold text-gray-900" id="pro-price">$10.00 USD</p>
+                    <p class="text-gray-500 mt-2" id="pro-billing">per user, per month (billed annually)</p>
+                     <div class="mt-6">
+                        <select class="w-full border-2 border-blue-600 rounded-lg shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 py-3">
+                            <option>Solo User</option>
+                            <option>2 Users</option>
+                            <option>3 Users</option>
+                            <option>4 Users</option>
+                            <option>5 Users</option>
+                            <option>6 Users</option>
+                            <option>7 Users</option>
+                            <option>8 Users</option>
+                            <option>9 Users</option>
+                            <option>10 Users</option>
+                            <option>11 Users</option>
+                            <option>12 Users</option>
+                            <option>13 Users</option>
+                            <option>14 Users</option>
+                            <option>15 Users</option>
+                            <option>16 Users</option>
+                            <option>17 Users</option>
+                            <option>18 Users</option>
+                            <option>19 Users</option>
+                            <option>20 Users</option>
+                        </select>
+                    </div>
+                    <p class="text-gray-600 mt-4">Unlimited pro features for salespeople, marketers, and growing teams.</p>
+                </div>
+                <div class="mt-auto">
+                    <div class="mt-8">
+                        <button class="w-full bg-blue-600 text-white font-semibold py-3 rounded-lg hover:bg-blue-700 transition-colors">Start Free Trial</button>
+                        <p class="text-center text-xs text-gray-500 mt-3">14 day free trial. No credit card required.</p>
+                    </div>
+                    <div class="mt-8 pt-8 border-t">
+                        <h4 class="font-semibold text-gray-800">Everything in Free Forever, plus:</h4>
+                        <ul class="mt-4 space-y-3 text-gray-600">
+                            <li class="flex items-start"><span class="font-bold mr-2 text-black">•</span>Unlimited Lead Engagement & Client Management</li>
+                            <li class="flex items-start"><span class="font-bold mr-2 text-black">•</span>Unlimited Email Lead Alerts & Lead Distribution</li>
+                            <li class="flex items-start"><span class="font-bold mr-2 text-black">•</span>Unlimited Message, File, and Page Templates</li>
+                            <li class="flex items-start"><span class="font-bold mr-2 text-black">•</span>Unlimited View Tracking on your Sales Content</li>
+                            <li class="flex items-start"><span class="font-bold mr-2 text-black">•</span>Custom Branding on your Files & Pages</li>
+                            <li class="flex items-start"><span class="font-bold mr-2 text-black">•</span>Bulk Calling & Messaging</li>
+                            <li class="flex items-start"><span class="font-bold mr-2 text-black">•</span>Custom Fields, Activity Attachments & Geolocation, and much more</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Privyr Ultimate Plan -->
+            <div id="plan-privyr-ultimate" class="bg-white rounded-lg shadow-lg p-8 flex flex-col transition-all duration-300">
+                <div class="flex-grow">
+                    <h3 class="text-sm font-bold text-purple-500 bg-purple-100 inline-block px-3 py-1 rounded-full">Privyr Ultimate</h3>
+                    <p class="mt-4 text-4xl font-bold text-gray-900">Custom</p>
+                    <p class="text-gray-500 mt-2">Contact sales for pricing</p>
+                    <div class="mt-6 bg-gray-100 text-center py-3 rounded-lg">
+                        <p class="font-semibold text-gray-800">For 20+ team members</p>
+                    </div>
+                    <p class="text-gray-600 mt-4">Unlock the full power of Privyr for larger teams and agencies.</p>
+                </div>
+                <div class="mt-auto">
+                    <div class="mt-8">
+                        <button class="w-full bg-blue-600 text-white font-semibold py-3 rounded-lg hover:bg-blue-700 transition-colors">Contact Sales</button>
+                        <p class="text-center text-xs text-gray-500 mt-3">Get a custom demo based on your requirements.</p>
+                    </div>
+                    <div class="mt-8 pt-8 border-t">
+                        <h4 class="font-semibold text-gray-800">Everything in Privyr Pro, plus:</h4>
+                        <ul class="mt-4 space-y-3 text-gray-600">
+                            <li class="flex items-start"><span class="font-bold mr-2 text-black">•</span> Advanced Team Management & Permissions</li>
+                            <li class="flex items-start"><span class="font-bold mr-2 text-black">•</span> Subteam Hierarchy</li>
+                            <li class="flex items-start"><span class="font-bold mr-2 text-black">•</span> More Custom Fields & Options</li>
+                            <li class="flex items-start"><span class="font-bold mr-2 text-black">•</span> Advanced Analytics & Team Dashboard</li>
+                            <li class="flex items-start"><span class="font-bold mr-2 text-black">•</span> Custom Branding of the Privyr Mobile App & Web App</li>
+                            <li class="flex items-start"><span class="font-bold mr-2 text-black">•</span> Personalised Onboarding, Setup, and Team Training</li>
+                            <li class="flex items-start"><span class="font-bold mr-2 text-black">•</span> Dedicated Account Manager</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+     <!-- Main Container -->
+    <div class="main-container">
+        <div>
+            <!-- Main Heading -->
+            <h1 class="main-heading">
+                Trusted by 250,000+ businesses in over 100+ countries
+            </h1>
+            
+            <!-- Subheading / Description -->
+            <p class="subheading">
+                We've helped sales and marketing professionals around the world receive, engage, and convert over 100 million leads with Privyr.
+            </p>
+
+            <!-- Stats Grid Container -->
+            <div class="stats-grid">
+
+                <!-- Stat Item 1: Businesses -->
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+                    </div>
+                    <p class="stat-number">250,000</p>
+                    <p class="stat-label">BUSINESSES</p>
+                </div>
+
+                <!-- Stat Item 2: Countries -->
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+                    </div>
+                    <p class="stat-number">100+</p>
+                    <p class="stat-label">COUNTRIES</p>
+                </div>
+
+                <!-- Stat Item 3: Leads Received -->
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                    </div>
+                    <p class="stat-number">100 Million</p>
+                    <p class="stat-label">LEADS RECEIVED</p>
+                </div>
+
+                <!-- Stat Item 4: Sales Improvement -->
+                <div class="stat-item">
+                    <div class="stat-icon">
+                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg>
+                    </div>
+                    <p class="stat-number">+300%</p>
+                    <p class="stat-label">SALES IMPROVEMENT</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- AI Chat Bot -->
+    <div id="ai-chat-container" class="fixed bottom-8 right-8 z-50">
+        <!-- Chat Toggle Button -->
+        <button id="chat-toggle-btn" class="bg-indigo-600 text-white w-16 h-16 rounded-full shadow-lg flex items-center justify-center hover:bg-indigo-700 transition-transform transform hover:scale-110">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+            </svg>
+        </button>
+
+        <!-- Chat Window -->
+        <div id="chat-window" class="fixed bottom-28 right-8 w-full max-w-md h-auto max-h-[70vh] bg-white rounded-lg shadow-2xl flex flex-col transform translate-y-8 opacity-0 pointer-events-none">
+            <div class="flex justify-between items-center p-4 bg-indigo-600 text-white rounded-t-lg">
+                <h3 class="font-bold text-lg">VARUN AI ADVISORY</h3>
+                <button id="close-chat-btn" class="text-white hover:text-gray-200">&times;</button>
+            </div>
+            <div id="chat-messages" class="flex-grow p-4 overflow-y-auto flex flex-col space-y-4">
+                 <div class="chat-message ai rounded-lg p-3">
+                    <p>Hello! How can I help you choose the right plan? Please describe your team and your needs.</p>
+                </div>
+            </div>
+            <div class="p-4 border-t">
+                <form id="chat-form" class="flex items-center space-x-2">
+                    <input id="chat-input" type="text" placeholder="e.g., 'We are a 10-person sales team...'" class="w-full border-gray-300 rounded-lg shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 p-2">
+                    <button type="submit" class="bg-indigo-600 text-white p-2 rounded-lg hover:bg-indigo-700">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" /></svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="contact-container">
+        <div class="contact-grid">
+            <!-- Left Info Column -->
+            <div class="info-column">
+                <h1>Talk to our Sales Team</h1>
+                <p class="subtitle">Book your personalised consultation with our experts to:</p>
+                
+                <ul class="features-list">
+                    <li class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <span>Explore how Privyr solves your most critical business challenges</span>
+                    </li>
+                    <li class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fa-solid fa-id-card"></i>
+                        </div>
+                        <span>Discover the best setup and tailored pricing for your team</span>
+                    </li>
+                    <li class="feature-item">
+                        <div class="feature-icon">
+                           <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                        <span>Boost your team sales and productivity</span>
+                    </li>
+                </ul>
+                
+                <p class="trusted-text">Trusted by over <a href="#">500k businesses</a> worldwide</p>
+
+                <div class="rating-box">
+                    <span>Rated 4.9 Stars</span>
+                    <div class="stars">
+                        <svg fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                        <svg fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                        <svg fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                        <svg fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                        <svg fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                    </div>
+                    <div class="app-logos">
+                        <!-- Simplified App Store & Google Play Icons -->
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1.2 15.68l-4.2-4.2 1.41-1.41 2.79 2.79 5.29-5.29 1.41 1.41-6.7 6.7z"/></svg>
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M3 22l1.41-1.41L12 13.17l7.59 7.59L21 22l-9-9zM3 2l9 9 9-9L12 11.17z"/></svg>
+                    </div>
+                </div>
+
+                <p class="testimonial-text">They're achieving their sales targets, and so can you!</p>
+
+                <div class="avatar-group">
+                    <div class="avatar">
+                        <img src="https://placehold.co/40x40/667eea/e0e7ff?text=A" alt="User Avatar 1">
+                    </div>
+                    <div class="avatar">
+                        <img src="https://placehold.co/40x40/ed64a6/fce7f3?text=B" alt="User Avatar 2">
+                    </div>
+                     <div class="avatar">
+                        <img src="https://placehold.co/40x40/4fd1c5/e6fffa?text=C" alt="User Avatar 3">
+                    </div>
+                     <div class="avatar">
+                        <img src="https://placehold.co/40x40/f6ad55/fffaf0?text=D" alt="User Avatar 4">
+                    </div>
+                    <div class="avatar avatar-more">
+                        <span>500K+</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Form Column -->
+            <div class="form-column">
+                <div class="form-card">
+                    <form action="#" method="POST">
+                        <div class="form-grid">
+                            <div class="form-group full-width">
+                                <label for="name">Name<span>*</span></label>
+                                <input type="text" id="name" class="form-input" required>
+                            </div>
+                            <div class="form-group full-width">
+                                <label for="email">Email<span>*</span></label>
+                                <input type="email" id="email" class="form-input" placeholder="name@company.com" required>
+                            </div>
+                            <div class="form-group full-width">
+                                <label for="phone">Phone Number<span>*</span></label>
+                                <div class="phone-input-group">
+                                    <span class="country-code">+91</span>
+                                    <input type="tel" id="phone" class="form-input phone-input" placeholder="81234 56789" required>
+                                </div>
+                            </div>
+                            <div class="form-group full-width">
+                                <label for="website">Website</label>
+                                <input type="url" id="website" class="form-input">
+                            </div>
+                            <div class="form-group full-width">
+                                <label for="team-size">How big is your sales team?<span>*</span></label>
+                                <select id="team-size" class="form-select" required>
+                                    <option value="" disabled selected>Select option...</option>
+                                    <option value="1">Just me</option>
+                                    <option value="2-5">2-5 people</option>
+                                    <option value="6-10">6-10 people</option>
+                                    <option value="11+">11+ people</option>
+                                </select>
+                            </div>
+                             <div class="form-group full-width">
+                                <label for="business-type">Which best describes your business?<span>*</span></label>
+                                <select id="business-type" class="form-select" required>
+                                    <option value="" disabled selected>Select option...</option>
+                                    <option value="b2b">B2B</option>
+                                    <option value="b2c">B2C</option>
+                                    <option value="agency">Agency</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div class="form-group full-width">
+                                <label for="engagement-type">How does your sales team primarily engage with their leads?<span>*</span></label>
+                                <select id="engagement-type" class="form-select" required>
+                                    <option value="" disabled selected>Select option...</option>
+                                    <option value="phone">Phone Calls</option>
+                                    <option value="email">Email</option>
+                                    <option value="social">Social Media</option>
+                                    <option value="in-person">In Person</option>
+                                </select>
+                            </div>
+                             <div class="form-group full-width">
+                                <button type="submit" class="submit-btn">Submit</button>
+                            </div>
+                        </div>
+                    </form>
+                    <p class="form-disclaimer">
+                        By clicking submit, you agree to <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a>.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="site-footer">
+        <p>&copy; Privyr 2025. All rights reserved.</p>
+    </footer>
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const hamburgerIcon = document.getElementById('hamburger-icon');
+            const closeIcon = document.getElementById('close-icon');
+
+            // Function to toggle the mobile menu
+            const toggleMobileMenu = () => {
+                mobileMenu.classList.toggle('hidden');
+                hamburgerIcon.classList.toggle('hidden');
+                closeIcon.classList.toggle('hidden');
+                const isExpanded = mobileMenuButton.getAttribute('aria-expanded') === 'true';
+                mobileMenuButton.setAttribute('aria-expanded', !isExpanded);
+            };
+
+            // Add event listener for the mobile menu button
+            mobileMenuButton.addEventListener('click', toggleMobileMenu);
+        });
+
+
+
+        // --- Existing Pricing Toggle Script ---
+        const monthlyBtn = document.getElementById('monthly-btn');
+        const yearlyBtn = document.getElementById('yearly-btn');
+        const toggleBg = document.getElementById('toggle-bg');
+        const proPrice = document.getElementById('pro-price');
+        const proBilling = document.getElementById('pro-billing');
+
+        let isYearly = true;
+
+        function updatePricing() {
+            if (isYearly) {
+                toggleBg.style.left = '50%';
+                yearlyBtn.classList.add('text-white');
+                yearlyBtn.classList.remove('text-blue-600');
+                monthlyBtn.classList.add('text-blue-600');
+                monthlyBtn.classList.remove('text-white');
+                proPrice.textContent = '$22.00 USD';
+                proBilling.textContent = 'per user, per month';
+            } else {
+                toggleBg.style.left = '0%';
+                monthlyBtn.classList.add('text-white');
+                monthlyBtn.classList.remove('text-blue-600');
+                yearlyBtn.classList.add('text-blue-600');
+                yearlyBtn.classList.remove('text-white');
+                proPrice.textContent = '$10.00 USD';
+                proBilling.textContent = 'per user, per month (billed annually)';
+            }
+        }
+
+        monthlyBtn.addEventListener('click', () => { if (isYearly) { isYearly = false; updatePricing(); } });
+        yearlyBtn.addEventListener('click', () => { if (!isYearly) { isYearly = true; updatePricing(); } });
+        updatePricing();
+
+        // --- New AI Chat Bot Script ---
+        const chatToggleBtn = document.getElementById('chat-toggle-btn');
+        const chatWindow = document.getElementById('chat-window');
+        const closeChatBtn = document.getElementById('close-chat-btn');
+        const chatForm = document.getElementById('chat-form');
+        const chatInput = document.getElementById('chat-input');
+        const chatMessages = document.getElementById('chat-messages');
+
+        function toggleChatWindow() {
+            const isHidden = chatWindow.classList.contains('opacity-0');
+            if (isHidden) {
+                chatWindow.classList.remove('opacity-0', 'translate-y-8', 'pointer-events-none');
+            } else {
+                chatWindow.classList.add('opacity-0', 'translate-y-8', 'pointer-events-none');
+            }
+        }
+
+        chatToggleBtn.addEventListener('click', toggleChatWindow);
+        closeChatBtn.addEventListener('click', toggleChatWindow);
+
+        chatForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const userInput = chatInput.value.trim();
+            if (!userInput) return;
+
+            // Display user message
+            addMessage(userInput, 'user');
+            chatInput.value = '';
+
+            // Show loading indicator
+            const loadingIndicator = addMessage('<div class="spinner w-6 h-6 rounded-full border-4 border-gray-200"></div>', 'ai', true);
+
+            // Clear previous highlights
+            document.querySelectorAll('[id^="plan-"]').forEach(card => card.classList.remove('ring-4', 'ring-green-500', 'scale-105'));
+
+            const planDetails = `
+                - Plan "Free Forever": $0, for up to 3 team members. Basic features. Good for individuals or small teams starting out.
+                - Plan "Privyr Pro": Paid plan for solo users and growing teams. Unlimited features for sales and marketing.
+                - Plan "Privyr Ultimate": Custom pricing for large teams and agencies (20+ members) needing advanced features and support.
+            `;
+            const prompt = `You are an expert sales assistant for a product called Privyr. A user will describe their situation. Based on their description and the plan details below, recommend one of three plans: "Free Forever", "Privyr Pro", or "Privyr Ultimate". Provide a brief, conversational justification for your choice.
+
+            Plan Details: ${planDetails}
+            User's description: "${userInput}"
+            Your task: Analyze the user's description and recommend one plan with a friendly explanation.`;
+
+            try {
+                let chatHistory = [{ role: "user", parts: [{ text: prompt }] }];
+                const payload = { 
+                    contents: chatHistory,
+                    generationConfig: {
+                        responseMimeType: "application/json",
+                        responseSchema: {
+                            type: "OBJECT",
+                            properties: {
+                                "plan": { "type": "STRING", "description": "Must be one of: Free Forever, Privyr Pro, or Privyr Ultimate" },
+                                "reason": { "type": "STRING", "description": "A detailed explanation of why this plan is the best fit for the user." }
+                            },
+                            required: ["plan", "reason"]
+                        }
+                    }
+                };
+                const apiKey = ""; // API key will be injected by the environment
+                const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`;
+                
+                const response = await fetch(apiUrl, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload)
+                });
+
+                if (!response.ok) throw new Error(`API request failed with status ${response.status}`);
+                
+                const result = await response.json();
+                
+                if (result.candidates && result.candidates[0].content && result.candidates[0].content.parts[0]) {
+                    const jsonResponse = JSON.parse(result.candidates[0].content.parts[0].text);
+                    const { plan, reason } = jsonResponse;
+                    loadingIndicator.remove();
+                    addMessage(reason, 'ai');
+                    highlightPlan(plan);
+                } else {
+                    throw new Error("Invalid response structure from API.");
+                }
+
+            } catch (error) {
+                console.error("Error calling Gemini API:", error);
+                loadingIndicator.remove();
+                addMessage("Sorry, I had trouble getting a recommendation. Please try again.", 'ai');
+            }
+        });
+
+        function addMessage(text, sender, isHtml = false) {
+            const messageElement = document.createElement('div');
+            messageElement.classList.add('chat-message', sender, 'rounded-lg', 'p-3', 'max-w-xs', 'sm:max-w-sm');
+            if (isHtml) {
+                messageElement.innerHTML = text;
+            } else {
+                messageElement.textContent = text;
+            }
+            chatMessages.appendChild(messageElement);
+            chatMessages.scrollTop = chatMessages.scrollHeight; // Auto-scroll to bottom
+            return messageElement;
+        }
+
+        function highlightPlan(planName) {
+            let planId;
+            if (planName.toLowerCase().includes('free')) planId = 'plan-free-forever';
+            else if (planName.toLowerCase().includes('pro')) planId = 'plan-privyr-pro';
+            else if (planName.toLowerCase().includes('ultimate')) planId = 'plan-privyr-ultimate';
+            
+            if (planId) {
+                const planCard = document.getElementById(planId);
+                planCard.classList.add('ring-4', 'ring-green-500', 'scale-105');
+                planCard.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            }
+        }
+
+    </script>
+
+</body>
+</html>
